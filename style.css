@@ -1,0 +1,108 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+.Main
+{
+	background:lightblue;
+}
+.container
+{
+	height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	display: flex;
+	margin: auto;
+}
+.service
+{
+	width: 240px;
+	height: 200px;
+	margin: 40px;
+	background: #DAF7A6;
+	border-radius: 2%;
+	text-align: center;
+	position: relative;
+	transition: all 1s;
+}
+.circle
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	clip-path: circle(360px at center 0);
+	background: red;
+	margin-top: -20px;
+}
+.circle h2
+{
+	padding-top: 70px;
+}
+.content
+{
+	position: absolute;
+	bottom: 40;
+	visibility: hidden;
+
+}
+.service:hover 
+{
+	transform: scale(1.1);
+	
+	height: 300px;
+	transition: all 1s;
+
+}
+.service:hover  .circle
+{
+	clip-path: circle(140px at center 0);
+	transition: all 1s;
+}
+.service:hover .circle h2
+{
+	padding-top: 30px;
+	transition: all 1s;
+}
+.service:hover .content
+{
+	visibility: visible;
+	bottom: 40px;
+	transition: all 1s;
+
+}
+.service a
+{
+	text-decoration: none;
+	background:#37B2DB;
+	border-radius: 5%;
+	padding: 10px;
+	margin-top: 40px;
+	color: #fff;
+}
+.container .service:hover:nth-child(1) .circle
+{
+	background: #ffaf00;
+}
+.container .service:hover:nth-child(2) .circle
+{
+	background: #33F61C;
+}
+.container .service:hover:nth-child(3) .circle
+{
+	background: #045AC2;
+}
+
+
+
+
+
+
+
+
+
+
+
